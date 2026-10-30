@@ -1,0 +1,530 @@
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@keyframes raio {
+ 0%, 20%, 40%, 60%, 80%, 100%{
+    opacity: 0;
+    transform: rotate(20deg);
+    scale: 1.5;
+ }
+ 10%, 30%, 50%, 70%, 90%{
+    opacity: 1;
+      
+ }
+}
+#raio {
+    position:absolute;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: -60px; mix-blend-mode: screen;
+    
+    width: 60%;
+}
+#raio img {
+    width: 40%;
+    animation: raio 15s normal infinite;
+
+       
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header img {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.capa {
+    height: 90vh;
+    background-image:
+        linear-gradient(rgba(255, 0, 0, 0.1), black 80%),
+        url(./imagens/banner.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "PlayFair Display", serif;
+}
+
+#bloco2 {
+    margin-top: -20px;
+    width: 30%;
+}
+
+.capa h1 {
+    font-size: 10vh;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+#bloco1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.capa span {
+    font-size: 2.5vh;
+    font-family: "poppins", serif;
+ text-transform: uppercase;
+}
+
+.capa p {
+    font-family: "Poppins", serif;
+    font-size: 3vh;
+    margin-top: 5%;
+    text-align: right;
+}
+.capa main {
+    margin: 5vw;
+}
+
+#geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2;
+}
+
+
+
+.comercial {
+    height: 150vh;
+    background:
+        radial-gradient(circle, rgba(255, 0, 0, 0), black 60%),
+        url(./imagens/bg.webp),
+        linear-gradient(360deg,rgba(255, 0, 0, 0), black 80%),
+        linear-gradient(rgba(255, 0, 0, 0), black 80%);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.comercial main , article, #patrocinio,#separar {
+    margin: 0 100px 100px 100px;
+}
+#separar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+#primario {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 3%;
+   /* margin: 0 7% 5%;*/
+}
+
+#primario h2 {
+    font-family: "Poppins", serif;
+    font-size: 40px;
+}
+
+#primario a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* margin-top: -3.5vh;*/
+}
+
+#blocos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 100px;
+   /* padding: 20px;*/
+    justify-content: space-between;
+   /* margin: -5% 6% 0;*/
+}
+.ingressos {
+    text-transform:uppercase ;
+    font-weight: 700;
+           overflow: hidden;
+
+}
+.card {
+    width: 32%;
+    /*padding: 10px;*/
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:last baseline;
+    padding: 20px;
+    gap: 20px;
+    font-family: 'Poppins';
+}
+
+.card div {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -25%;
+}
+
+
+
+
+
+
+
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 7% 10% 0;
+}
+
+#logos > .card {
+    margin-left: 1%;
+}
+
+
+#patrocinio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#patrocinio figure {
+    width: 100%;
+    margin: 8% 0 0 3%;
+}
+
+#patrocinio figure figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+#final-principal {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+     display: flex;
+     flex-direction: row; 
+     gap: 25px; justify-content: center;
+}
+
+
+
+
+
+/*Parte Ultimo */
+footer {
+    height: 80vh;
+    background:
+        linear-gradient(to left, rgba(255, 0, 0, 0), black 95%),
+        url(./imagens/bg-footer.webp);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+}
+#footer-geral {
+    margin: 2% 5% 3% 5% ;
+    
+}
+footer h1 {
+    font-size: 8vh;
+    font-family: "poppins", serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+footer span {
+    font-size: 2vh;
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+}
+footer main{
+    /* margin: 0 5% 7%;*/
+     padding-top: 0px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+    align-items: center;
+     
+         
+
+}
+footer nav {
+    font-family:"Poppins";
+    flex-direction: column;
+    gap: 3px;
+    font-size: 1.5vh;
+}
+#parte-lateral {
+      font-family:"Poppins";
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+}
+#logos-footer{
+    display: flex;
+margin-top: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+   /* margin: -2% 5% 7%;*/
+}
+
+
+
+/* Parte adaptar celular */
+@media (max-width: 1024px) {
+
+#raio img {
+    width: 80%;
+    animation: raio 15s normal infinite;
+
+}
+
+/* primeiro fundo */
+    .capa {
+        height: 100vh;
+        background-image:
+            radial-gradient(circle, rgba(255, 0, 0, 0.1), black 95%),
+            url(./imagens/bg-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        text-align: center;
+    }
+
+    .capa p {
+        font-family: "Poppins", serif;
+        font-size: 150%;
+        margin-top: 5%;
+        width: 80%;
+        text-align: justify;
+        text-align-last: right;
+    }
+    .capa h1 {
+        font-size: 6vh;
+    }
+
+    #geral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #bloco1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #bloco2 {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .comercial {
+        height: auto;
+        min-height: 250vh;
+        padding-bottom: 10%;
+    }
+    .comercial main,
+    article,
+    #patrocinio,
+    #separar {
+        margin: 0;
+    }
+     #separar {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    } 
+    #primario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        text-align: center;
+    }
+
+    #primario a {
+        margin: -8vh 0 8vw 0;
+    }
+
+    #blocos {
+ display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 6%;
+    gap: 20px;
+    padding-bottom: 50px;
+    }
+
+    .card {
+          width: 100%;
+    height: auto;
+    min-height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+    }
+
+.card div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+    #separar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        gap: 50px;
+    }
+    .card-comercial {
+        margin-bottom: 20px;
+    }
+  
+  
+  
+
+   
+    #patrocinio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    #patrocinio figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    #patrocinio > figure img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 15px;
+        object-fit: cover;
+    }
+
+    #patrocinio > figure figcaption {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        font-size: 90%;
+    }
+
+        
+    #final-principal h1 {
+        font-size: 20px;
+    }
+    
+    #final-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    text-align: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+     display: flex;
+     flex-direction: column; 
+     gap: 25px; justify-content: center;
+     font-size: 15px;
+}
+
+
+
+footer h1 {
+    font-size: 5vh;
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+}
+
+footer h3 {
+    font-size: 2.5vh;
+    font-family: "Poppins", serif;
+}
+
+footer main{
+     margin: 0 5% 7%;
+     padding-top: 50px;
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     
+         
+
+}
+footer nav {
+    font-family:"Poppins";
+    flex-direction: column;
+    gap: 3px;
+    font-size: 1.5vh;
+}
+#parte-lateral {
+      font-family:"Poppins";
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#logos-footer img {
+    width: 25%;
+}
+#logos-footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+   margin: 10% 0 7%;
+    gap: 10px;
+
+    margin-bottom:150px;
+}
+
+
+}
