@@ -295,6 +295,11 @@ margin-top: 5%;
 /* Parte adaptar celular */
 @media (max-width: 1024px) {
 
+.capa , .comercial , footer {
+        background-attachment: scroll;
+}
+
+    
 #raio img {
     width: 80%;
     animation: raio 15s normal infinite;
