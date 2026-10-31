@@ -295,8 +295,64 @@ margin-top: 5%;
 /* Parte adaptar celular */
 @media (max-width: 1024px) {
 
-.capa , .comercial , footer {
-        background-attachment: scroll;
+/* CORREÇÕES PARA CELULAR */
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.capa,
+.comercial,
+footer {
+    width: 100%;
+    max-width: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.capa {
+    min-height: 100svh;
+    height: auto;
+}
+
+.comercial {
+    height: auto;
+    min-height: 100svh;
+    overflow: hidden;
+}
+
+footer {
+    height: auto;
+    min-height: 80svh;
+    background-attachment: scroll;
+    background-position: center;
+    overflow: hidden;
+}
+
+#raio {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#raio img {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Evitar elementos ultrapassando a tela */
+#geral,
+#separar,
+#blocos,
+#patrocinio,
+#logos,
+#logos-footer {
+    max-width: 100%;
 }
 
     
