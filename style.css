@@ -31,7 +31,7 @@ html {
     width: 60%;
 }
 #raio img {
-    width: 40%;
+    width: 20%;
     animation: raio 15s normal infinite;
 
        
@@ -295,10 +295,8 @@ margin-top: 5%;
 /* Parte adaptar celular */
 @media (max-width: 1024px) {
 
-
-    
 #raio img {
-    width: 60%;
+    width: 80%;
     animation: raio 15s normal infinite;
 
 }
